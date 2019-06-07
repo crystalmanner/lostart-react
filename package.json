@@ -1,35 +1,9 @@
 {
+  "name": "gatsby-starter-blog",
   "private": true,
-  "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "server": "gatsby build && gatsby serve",
-    "build": "gatsby build && cp public/index.html resources/views/web/home/index.blade.php",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "devDependencies": {
-    "axios": "^0.18",
-    "bootstrap": "^4.1.0",
-    "cross-env": "^5.1",
-    "jquery": "^3.2",
-    "laravel-mix": "^4.0.7",
-    "lodash": "^4.17.5",
-    "popper.js": "^1.12",
-    "prettier": "^1.17.0",
-    "resolve-url-loader": "^2.3.1",
-    "sass": "^1.15.2",
-    "sass-loader": "^7.1.0",
-    "vue": "^2.5.17"
-  },
+  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "version": "0.1.0",
+  "author": "funnydeveloper",
   "dependencies": {
     "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
     "@u-wave/react-vimeo": "^0.6.0",
@@ -59,7 +33,6 @@
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
-    "interweave": "^11.1.0",
     "jquery": "^3.4.1",
     "node-sass": "^4.12.0",
     "prismjs": "^1.16.0",
@@ -78,9 +51,23 @@
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a"
+  "main": "n/a",
+  "scripts": {
+    "server": "gatsby build && gatsby serve",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "heroku-postbuild": "gatsby build",
+    "now-build": "gatsby build"
+  }
 }
