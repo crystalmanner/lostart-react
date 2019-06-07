@@ -12,7 +12,7 @@ let ProjectItem = props => {
 
   const alt = project.image.title;
 
-  if (media.contentType == "image/jpeg" || media.contentType == "image/png") {
+  if (media.contentType === "image/jpeg" || media.contentType === "image/png") {
     media_html = (
       <div className="card card-3x2">
         <div className="card-content">
@@ -22,7 +22,7 @@ let ProjectItem = props => {
     );
   }
 
-  if (media.contentType == "video/mp4") {
+  if (media.contentType === "video/mp4") {
     media_html = (
       <div className="card card-3x2">
         <div className="card-content mp4">

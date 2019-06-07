@@ -3,10 +3,10 @@
 
 <head>
     <meta charset=utf-8>
-    <meta http-equiv="content-language" content="vi"/>
+    <meta httpEquiv="content-language" content="vi"/>
     <meta name="language" content="vietnamese"/>
-    <meta content="en,vi" http-equiv="Content-Language"/>
-    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="en,vi" httpEquiv="Content-Language"/>
+    <meta content="IE=edge" httpEquiv=X-UA-Compatible>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="google-site-verification" content="7rAvy-mh1fvQQE8sVTyYQBdSTFQ64fjUp7H44nCM7_8" />

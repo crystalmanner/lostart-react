@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 
 class NotFoundPage extends React.Component {
     render() {

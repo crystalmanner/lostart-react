@@ -10,5 +10,5 @@ export const META_TITLE = 'Lost art - Projects';
 export const META_ROBOTS = 'INDEX,FOLLOW';
 export const META_DESCRIPTION = 'Lost art - Projects';
 export const META_KEYWORD = 'Lost art';
-export const FOOTER_TEXT = "Ⓒ footer is updatedable in cms <a href = \'http://lost-art.com/\'>link</a> ip sum";
+export const FOOTER_TEXT = "Ⓒ footer is updatedable in cms <a href = 'http://lost-art.com/'>link</a> ip sum";
 export const FOOTER_COLOR = '#212529';

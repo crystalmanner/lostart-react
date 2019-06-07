@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Vimeo from '@u-wave/react-vimeo';
 import { Link } from 'gatsby'
 
@@ -23,7 +23,7 @@ class SectionItem extends Component {
 
         let data_portrait = '';
 
-        if (project.slug != "home-video") {
+        if (project.slug !== "home-video") {
 
             if (project.medias.length > 0) {
 
@@ -40,21 +40,21 @@ class SectionItem extends Component {
                 switch (project.model) {
                     case 'Screen':
                         data = <div className="image image--fullpage landscape"
-                                    style={backgroundLandscape}></div>;
+                            style={backgroundLandscape}></div>;
                         data_portrait = <div className="image image--fullpage portrait"
-                                    style={backgroundPortrait}></div>;
+                            style={backgroundPortrait}></div>;
                         break;
                     case 'Width':
                         data = <div className="image image--width landscape"
-                                    style={backgroundLandscape}></div>;
+                            style={backgroundLandscape}></div>;
                         data_portrait = <div className="image image--width portrait"
-                                    style={backgroundPortrait}></div>;
+                            style={backgroundPortrait}></div>;
                         break;
                     case 'Height':
                         data = <div className="image image--height landscape"
-                                    style={backgroundLandscape}></div>;
+                            style={backgroundLandscape}></div>;
                         data_portrait = <div className="image image--height portrait"
-                                    style={backgroundPortrait}></div>;
+                            style={backgroundPortrait}></div>;
                         break;
                 }
 
@@ -95,8 +95,8 @@ class SectionItem extends Component {
 
                     <div className="video video--iframe">
 
-                       <video className="video-mp4" autoPlay={true} loop ={true} playsInline muted>
-                            <source src={media.url} type="video/mp4"/>
+                        <video className="video-mp4" autoPlay={true} loop={true} playsInline muted>
+                            <source src={media.url} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
 

@@ -1,6 +1,7 @@
-import React, { Children } from "react";
+import React from "react";
+//import React, { Children } from "react";
 import { Link } from "gatsby";
-import {isMobile} from 'react-device-detect'
+import { isMobile } from 'react-device-detect'
 import Meta from "../components/Meta";
 import Footer from "../components/Footer";
 import GoBack from "../components/GoBack";
@@ -24,7 +25,7 @@ class PageLayout extends React.Component {
 
     window.scrollTo(0, 0);
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       let iCurScrollPos = $(this).scrollTop();
 
       if (iCurScrollPos > iScrollPos || iCurScrollPos === 0) {
@@ -63,7 +64,7 @@ class PageLayout extends React.Component {
 
     return (
       <div className="page-screen">
-        <Meta {...meta_data } {...this.state} />
+        <Meta {...meta_data} {...this.state} />
         <div className="project-layout display-table">
           <div className="project-layout--content">
             <div className="project-layout--left">
@@ -71,13 +72,13 @@ class PageLayout extends React.Component {
                 <ul className="menu-first">
                   <li className="active">
                     <h1>
-                        <a href="https://lost-art.com" style={style_primary_color}>
-                            {data_config.head_text}
-                        </a>
+                      <a href="https://lost-art.com" style={style_primary_color}>
+                        {data_config.head_text}
+                      </a>
                     </h1>
                   </li>
                 </ul>
-              {
+                {
                   !isMobile &&
                   <>
                     <ul className="menu-second">
@@ -103,8 +104,8 @@ class PageLayout extends React.Component {
                         </Link>
                       </li>
                     </ul>
-                </>
-              }
+                  </>
+                }
               </div>
             </div>
 
@@ -135,7 +136,7 @@ class PageLayout extends React.Component {
         {isMobile ?
           (
             <style>
-                    {`
+              {`
                     .footer a , .project-layout--right a {color: ${style_second_color.color}}
                     .project-layout--right {color: ${style_primary_color.color}}
                     `}
@@ -143,16 +144,16 @@ class PageLayout extends React.Component {
           ) :
           (
             <style>
-            {`
+              {`
                   .section-content--menu > ul > li > a:hover {color: ${
-                    style_primary_color.color
-                  } !important}
+                style_primary_color.color
+                } !important}
                   a.go-back:hover, .footer a:hover, .project-layout--right a:hover {color: ${
-                    style_primary_color.color
-                  } !important}
+                style_primary_color.color
+                } !important}
                   .footer a , .project-layout--right a {color: ${
-                    style_second_color.color
-                  }}
+                style_second_color.color
+                }}
                   .project-layout--right {color: ${style_primary_color.color}}
                   `}
             </style>

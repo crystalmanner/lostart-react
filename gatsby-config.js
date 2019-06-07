@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== "production") {
 
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.lost-art.herokuapp.com/`,
+        siteUrl: `https://www.lost-art.com/`,
     },
 
     plugins: [
@@ -63,8 +63,10 @@ module.exports = {
         {
             resolve: `gatsby-source-contentful`,
             options: {
-                spaceId: `f9qtzu9dvrki`,
-                accessToken: `bef8878636daf1caabe2f86fea898a7b0c1383e4e20931164eac2fafd6e6d13a`
+                // spaceId: `f9qtzu9dvrki`,
+                // accessToken: `bef8878636daf1caabe2f86fea898a7b0c1383e4e20931164eac2fafd6e6d13a`
+                spaceId: `ldgy0e55mhnf`,
+                accessToken: `1c4e6709e2d0b240f07839298e91e479a511d6deaaf89fff8bce9f1b7b0b0b76`
             }
         }
     ]
