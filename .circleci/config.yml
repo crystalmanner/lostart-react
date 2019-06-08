@@ -23,7 +23,7 @@ jobs:
             git config user.email "crystalmanner130@outlook.com"
             git config user.name "crystalmanner"
             git commit --allow-empty -m "Trigger deployment"
-            git push -q https://${9192805dcc345fc7df1f6b497e06dcfe00582a97}@github.com/crystalmanner/lostart-react.git master
+            git push -q https://${d6de6af509b59ba814ce900105573a60bca1bc2f}@github.com/crystalmanner/lostart-react.git master
         #   command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
