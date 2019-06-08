@@ -18,7 +18,8 @@ jobs:
           command: npm run build
       - run:
           name: Deploy
-          command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
+          command: git push -q https://${d6de6af509b59ba814ce900105573a60bca1bc2f}@github.com/crystalmanner/lostart-react.git master
+        #   command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
