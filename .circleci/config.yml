@@ -18,7 +18,7 @@ jobs:
           command: npm run build
       - deploy:
           name: digital ocean
-          command: ssh -o "StrictHostKeyChecking no" root:123qwe123@68.183.20.191 "cd ~/var/www/html; npm run build;"
+          command: ssh -o StrictHostKeyChecking=no root@68.183.20.191 "cd ~/var/www/html; npm run build;"
     #   - run:
     #       name: Deploy
     #       command: git push https://${9192805dcc345fc7df1f6b497e06dcfe00582a97}@github.com/crystalmanner/lostart-react.git master
