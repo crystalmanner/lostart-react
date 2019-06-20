@@ -18,7 +18,7 @@ jobs:
           command: npm run build
       - deploy:
           name: digital ocean
-          command: ssh -o "StrictHostKeyChecking no" lostart@68.183.29.77 "cd ../var/www/html; npm run build;"
+          command: ssh -o "StrictHostKeyChecking no" lostart@68.183.29.77 "cd ../home/lostart/lostart-react; npm run build;"
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
