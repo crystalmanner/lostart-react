@@ -22,8 +22,6 @@ class ProjectTemp extends React.Component {
         const themeOptions = this.props.data.allContentfulGeneralOptions
             .edges[0].node;
 
-
-
         let iScrollPos = 0;
         const el = document.getElementsByClassName("project-layout")[0];
 

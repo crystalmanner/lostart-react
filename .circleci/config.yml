@@ -18,17 +18,7 @@ jobs:
           command: npm run build
       - deploy:
           name: digital ocean
-          command: ssh -o "StrictHostKeyChecking no" root@68.183.20.191 "cd ../var/www/html; npm run build;"
-    #   - run:
-    #       name: Deploy
-    #       command: git push https://${9192805dcc345fc7df1f6b497e06dcfe00582a97}@github.com/crystalmanner/lostart-react.git master
-            # |
-            # git config credential.helper 'cache --timeout=120'
-            # git config user.email "crystalmanner130@outlook.com"
-            # git config user.name "crystalmanner"
-            # git commit --allow-empty -m "Trigger deployment"
-            # git push https://${9192805dcc345fc7df1f6b497e06dcfe00582a97}@github.com/crystalmanner/lostart-react.git master
-        #   command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git
+          command: ssh -o "StrictHostKeyChecking no" lostart@68.183.29.77 "cd lostart-react; npm run build;"
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
