@@ -78,6 +78,11 @@ class PageLayout extends React.Component {
                     </h1>
                   </li>
                 </ul>
+                <ul className="menu-second">
+                  <li>
+                    <GoBack style={style_second_color} />
+                  </li>
+                </ul>
                 {
                   !isMobile &&
                   <>
@@ -132,7 +137,7 @@ class PageLayout extends React.Component {
             </div>
           </div>
         </div>
-        <GoBack className="only_desktop" style={style_second_color} />
+        {/* <GoBack className="only_desktop" style={style_second_color} /> */}
         {isMobile ?
           (
             <style>
