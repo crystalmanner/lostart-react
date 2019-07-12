@@ -30,7 +30,7 @@ class ProjectTemp extends React.Component {
     let iScrollPos = 0;
     const el = document.getElementsByClassName("project-layout")[0];
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       let iCurScrollPos = $(this).scrollTop();
 
       if (iCurScrollPos > iScrollPos || iCurScrollPos === 0) {
@@ -368,74 +368,74 @@ class ProjectTemp extends React.Component {
     }
 
     if (isMobile) {
-        return (
-            <div className="project-screen">
-        <Meta {...meta_data} />
-        <div className="project-layout">
-          <div className="project-layout--content">
-            <div className="project-layout--left">
-              <div className="section-content--menu">
-                <ul className="menu-first">
-                  <li className="active">
-                    <h1>
+      return (
+        <div className="project-screen">
+          <Meta {...meta_data} />
+          <div className="project-layout">
+            <div className="project-layout--content">
+              <div className="project-layout--left">
+                <div className="section-content--menu">
+                  <ul className="menu-first">
+                    <li className="active">
+                      <h1>
                         <a href="https://lost-art.com" target="_blank" style={style_primary_color}>
-                            {data_config.head_text}
+                          {data_config.head_text}
                         </a>
-                    </h1>
-                  </li>
-                </ul>
-                <ul className="menu-second">
-                    <li>
-                    <GoBack style={style_second_color} />
+                      </h1>
                     </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="project-layout--right">
-              <div className="main-content">
-                {vimeo1}
-                {vimeo2}
-                {vimeo3}
-                {vimeo4}
-                {medias}
-                <h1 className="ttile" style={style_primary_color}>
-                  {project.title}
-                </h1>
-
-                <h2
-                  className="sub-ttile desc m-b-35"
-                  style={style_second_color}
-                >
-                  {project.description.description}
-                </h2>
-
-                <div className="m-b-35 content-project">
-                  {project.content.content
-                    ? renderHTML(project.content.content)
-                    : ""}
+                  </ul>
+                  <ul className="menu-second">
+                    <li>
+                      <GoBack style={style_second_color} />
+                    </li>
+                  </ul>
                 </div>
               </div>
 
-              <Footer
-                data_config={data_config}
-                color={
-                  project.footerTextColorProject
-                    ? project.footerTextColorProject
-                    : data_config.footer_color
-                }
-              />
+              <div className="project-layout--right">
+                <div className="main-content">
+                  {vimeo1}
+                  {vimeo2}
+                  {vimeo3}
+                  {vimeo4}
+                  {medias}
+                  <h1 className="ttile" style={style_primary_color}>
+                    {project.title}
+                  </h1>
+
+                  <h2
+                    className="sub-ttile desc m-b-35"
+                    style={style_second_color}
+                  >
+                    {project.description.description}
+                  </h2>
+
+                  <div className="m-b-35 content-project">
+                    {project.content.content
+                      ? renderHTML(project.content.content)
+                      : ""}
+                  </div>
+                </div>
+
+                <Footer
+                  data_config={data_config}
+                  color={
+                    project.footerTextColorProject
+                      ? project.footerTextColorProject
+                      : data_config.footer_color
+                  }
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <style>
+          <style>
             {`
             .footer a , .project-layout--right a {color: ${style_second_color.color}}
             .project-layout--right {color: ${style_primary_color.color}}
             `}
-        </style>
-      </div>
-        )
+          </style>
+        </div>
+      )
     }
     return (
       <div className="project-screen">
@@ -447,39 +447,39 @@ class ProjectTemp extends React.Component {
                 <ul className="menu-first">
                   <li className="active">
                     <h1>
-                        <a href="https://lost-art.com" style={style_primary_color}>
-                            {data_config.head_text}
-                        </a>
+                      <a href="https://lost-art.com" style={style_primary_color}>
+                        {data_config.head_text}
+                      </a>
                     </h1>
                   </li>
                 </ul>
                 <ul className="menu-second">
-                    <li className="m-r-10">
-                        <Link
-                            to="/page/about-us/"
-                            style={style_primary_color}
-                        >
-                            information
+                  <li className="m-r-10">
+                    <Link
+                      to="/page/about-us/"
+                      style={style_primary_color}
+                    >
+                      information
                         </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/page/contact/"
-                            style={style_primary_color}
-                        >
-                            contact
+                  </li>
+                  <li>
+                    <Link
+                      to="/page/contact/"
+                      style={style_primary_color}
+                    >
+                      contact
                         </Link>
-                    </li>
+                  </li>
                 </ul>
                 <ul className="menu-third only_desktop">
-                    <li>
-                        <Link
-                            to="/page/bio-in-japanese/"
-                            style={style_primary_color}
-                        >
-                            日本語
+                  <li>
+                    <Link
+                      to="/page/bio-in-japanese/"
+                      style={style_primary_color}
+                    >
+                      日本語
                         </Link>
-                    </li>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -522,20 +522,20 @@ class ProjectTemp extends React.Component {
         </div>
 
         <GoBack className="only_desktop" style={style_second_color} />
-            <style>
-                {`
+        <style>
+          {`
                   .section-content--menu > ul > li > a:hover {color: ${
-                    style_primary_color.color
-                  } !important}
+            style_primary_color.color
+            } !important}
                   a.go-back:hover, .footer a:hover, .project-layout--right a:hover {color: ${
-                    style_primary_color.color
-                  } !important}
+            style_primary_color.color
+            } !important}
                   .footer a , .project-layout--right a {color: ${
-                    style_second_color.color
-                  }}
+            style_second_color.color
+            }}
                   .project-layout--right {color: ${style_primary_color.color}}
                   `}
-            </style>
+        </style>
 
       </div>
     );

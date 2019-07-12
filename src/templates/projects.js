@@ -152,7 +152,7 @@ class ProjectTemp extends React.Component {
                                             information
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className="m-r-10">
                                         <Link
                                             to="/page/contact/"
                                             style={style_primary_color}
@@ -190,6 +190,9 @@ class ProjectTemp extends React.Component {
                     {`
               .section-content--menu > ul > li > a:hover{color: ${
                         style_hover.color
+                        } !important}
+                .section-content--menu > ul > li > a:visited{color: ${
+                        style_primary_color.color
                         } !important}
               .footer a:hover {color: ${data_config.primary_color} !important}
               .footer a {color: ${data_config.second_color}}
