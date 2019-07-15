@@ -137,9 +137,9 @@ class ProjectTemp extends React.Component {
                                 <ul className="menu-first">
                                     <li className="active">
                                         <h1>
-                                            <a href="https://lost-art.com" style={style_primary_color}>
+                                            <Link to="https://lost-art.com" style={style_primary_color}>
                                                 {data_config.head_text}
-                                            </a>
+                                            </Link>
                                         </h1>
                                     </li>
                                 </ul>
@@ -191,9 +191,7 @@ class ProjectTemp extends React.Component {
               .section-content--menu > ul > li > a:hover{color: ${
                         style_hover.color
                         } !important}
-                .section-content--menu > ul > li > a:visited{color: ${
-                        style_primary_color.color
-                        } !important}
+               
               .footer a:hover {color: ${data_config.primary_color} !important}
               .footer a {color: ${data_config.second_color}}
               .project-layout--right {color: ${data_config.primary_color}}
