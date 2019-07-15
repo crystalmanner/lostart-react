@@ -19,7 +19,7 @@ class HomePage extends Component {
             .node;
 
         if (themeOptions.hideHomepageGeneral) {
-            return window.location.pathname = "/projects"
+            // return window.location.pathname = "/projects"
         }
 
         if (!isMobile) {
