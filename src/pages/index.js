@@ -18,9 +18,9 @@ class HomePage extends Component {
         const themeOptions = this.props.data.allContentfulGeneralOptions.edges[0]
             .node;
 
-        if (themeOptions.hideHomepageGeneral) {
-            // return window.location.pathname = "/projects"
-        }
+        // if (themeOptions.hideHomepageGeneral) {
+        //     return window.location.pathname = "/projects"
+        // }
 
         if (!isMobile) {
             if ($(".nano").length > 0) {

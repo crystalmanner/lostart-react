@@ -459,7 +459,7 @@ class ProjectTemp extends React.Component {
                       to="/page/about-us/"
                       style={style_primary_color}
                     >
-                      information2
+                      information
                         </Link>
                   </li>
                   <li>
