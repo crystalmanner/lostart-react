@@ -19,7 +19,6 @@ class PageLayout extends React.Component {
 
   componentDidMount() {
     const page = this.props.page;
-
     let iScrollPos = 0;
     const el = document.getElementsByClassName("project-layout")[0];
 
@@ -122,7 +121,7 @@ class PageLayout extends React.Component {
                     : "m-b-35 main-content"
                 }
               >
-                {/* {page.content ? renderHTML(page.content.content) : ""} */}
+                {page.content ? renderHTML(page.content.content) : ""}
               </div>
 
               <Footer

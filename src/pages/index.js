@@ -13,8 +13,17 @@ import "../sass/app.scss";
 
 class HomePage extends Component {
 
-    componentDidMount() {
 
+    componentWillMount() {
+        console.log("1111111111")
+        const themeOptions = this.props.data.allContentfulGeneralOptions.edges[0]
+            .node;
+        document.body.style.backgroundColor = themeOptions.backgroundColorGeneral
+            ? themeOptions.backgroundColorOfListingProject
+            : app_config.BACKGROUND_COLOR
+    }
+    componentDidMount() {
+        console.log("222222222")
         const themeOptions = this.props.data.allContentfulGeneralOptions.edges[0]
             .node;
 
@@ -27,14 +36,15 @@ class HomePage extends Component {
                 $(".nano").nanoScroller();
             }
         }
+        document.body.style.backgroundColor = themeOptions.backgroundColorGeneral
+            ? themeOptions.backgroundColorOfListingProject
+            : app_config.BACKGROUND_COLOR
 
         setTimeout(function () {
             $(".footer").css({ opacity: "1" });
         }, 300);
 
-        document.body.style.backgroundColor = themeOptions.backgroundColorGeneral
-            ? themeOptions.backgroundColorOfListingProject
-            : app_config.BACKGROUND_COLOR
+
     }
 
     componentDidUpdate() {
