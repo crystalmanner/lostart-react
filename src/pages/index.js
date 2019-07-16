@@ -13,17 +13,7 @@ import "../sass/app.scss";
 
 class HomePage extends Component {
 
-
-    componentWillMount() {
-        console.log("1111111111")
-        const themeOptions = this.props.data.allContentfulGeneralOptions.edges[0]
-            .node;
-        document.body.style.backgroundColor = themeOptions.backgroundColorGeneral
-            ? themeOptions.backgroundColorOfListingProject
-            : app_config.BACKGROUND_COLOR
-    }
     componentDidMount() {
-        console.log("222222222")
         const themeOptions = this.props.data.allContentfulGeneralOptions.edges[0]
             .node;
 
@@ -43,11 +33,10 @@ class HomePage extends Component {
         setTimeout(function () {
             $(".footer").css({ opacity: "1" });
         }, 300);
-
-
     }
 
     componentDidUpdate() {
+        console.log("333")
         this.buildSwiper();
     }
 
@@ -80,7 +69,9 @@ class HomePage extends Component {
         const projects = this.props.data.allContentfulProject.edges;
         const themeOptions = this.props.data.allContentfulGeneralOptions.edges[0]
             .node;
-
+        const defaultBackGround = themeOptions.backgroundColorGeneral
+            ? themeOptions.backgroundColorOfListingProject
+            : app_config.BACKGROUND_COLOR
         const sections = this.props.data.allContentfulSection.edges.map(
             (section, index) => (
                 <SectionItem
@@ -155,7 +146,7 @@ class HomePage extends Component {
             />
         ));
         return (
-            <div className="home-screen">
+            <div className="home-screen" style={{ background: defaultBackGround }}>
                 <div className="project-screen">
                     <Meta {...meta_data} />
                     <div className="project-layout">
