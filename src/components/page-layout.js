@@ -122,7 +122,7 @@ class PageLayout extends React.Component {
                     : "m-b-35 main-content"
                 }
               >
-                {page.content ? renderHTML(page.content.content) : ""}
+                {/* {page.content ? renderHTML(page.content.content) : ""} */}
               </div>
 
               <Footer

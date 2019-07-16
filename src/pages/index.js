@@ -32,15 +32,9 @@ class HomePage extends Component {
             $(".footer").css({ opacity: "1" });
         }, 300);
 
-
-        $(".main-content").css({ opacity: "0" });
-        setTimeout(function () {
-            $(".main-content").css({ opacity: "1" });
-        }, 1500);
         document.body.style.backgroundColor = themeOptions.backgroundColorGeneral
             ? themeOptions.backgroundColorOfListingProject
             : app_config.BACKGROUND_COLOR
-        console.log(document.body.style.backgroundColor)
     }
 
     componentDidUpdate() {
