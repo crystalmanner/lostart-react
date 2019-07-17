@@ -384,7 +384,7 @@ class ProjectTemp extends React.Component {
                       </h1>
                     </li>
                   </ul>
-                  <ul className="menu-second">
+                  <ul className="menu-second-1">
                     <li className="class-contact">
                       <GoBack style={style_second_color} />
                     </li>
