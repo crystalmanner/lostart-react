@@ -147,7 +147,7 @@ class HomePage extends Component {
         ));
         return (
             <div className="home-screen" style={{ background: defaultBackGround }}>
-                <div className="project-screen">
+                <div className="project-screen" style={{ background: defaultBackGround }}>
                     <Meta {...meta_data} />
                     <div className="project-layout">
                         <div className="project-layout--content">
@@ -171,7 +171,7 @@ class HomePage extends Component {
                                                 information
                                         </Link>
                                         </li>
-                                        <li>
+                                        <li className="class-contact">
                                             <Link
                                                 to="/page/contact/"
                                                 style={style_primary_color}
@@ -209,6 +209,9 @@ class HomePage extends Component {
                         {`
               .section-content--menu > ul > li > a:hover{color: ${
                             style_hover.color
+                            } !important}
+                .section-content--menu > ul > .class-contact > a:visited{color: ${
+                            style_primary_color.color
                             } !important}
               .footer a:hover {color: ${data_config.primary_color} !important}
               .footer a {color: ${data_config.second_color}}

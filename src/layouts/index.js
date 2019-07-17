@@ -7,7 +7,7 @@ import {
 } from "react-transition-group";
 
 //This variable will be responsible for our animation duration
-const timeout = 200;
+const timeout = 400;
 
 //This object contains basic styles for animation, but you can extend them to whatever you like. Be creative!
 const getTransitionStyles = {
