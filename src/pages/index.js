@@ -210,9 +210,7 @@ class HomePage extends Component {
               .section-content--menu > ul > li > a:hover{color: ${
                             style_hover.color
                             } !important}
-                .section-content--menu > ul > .class-contact > a:visited{color: ${
-                            style_primary_color.color
-                            } !important}
+               
               .footer a:hover {color: ${data_config.primary_color} !important}
               .footer a {color: ${data_config.second_color}}
               .project-layout--right {color: ${data_config.primary_color}}
