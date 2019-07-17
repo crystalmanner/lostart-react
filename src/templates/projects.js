@@ -187,11 +187,15 @@ class ProjectTemp extends React.Component {
                 </div>
 
                 <style>
+
                     {`
               .section-content--menu > ul > li > a:hover{color: ${
                         style_hover.color
                         } !important}
                 .section-content--menu > ul > .class-contact > a:active{color: ${
+                        style_primary_color.color
+                        } !important}
+                .section-content--menu > ul > .class-contact > a:hover{color: ${
                         style_primary_color.color
                         } !important}
               .footer a:hover {color: ${data_config.primary_color} !important}
