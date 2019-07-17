@@ -192,7 +192,7 @@ class ProjectTemp extends React.Component {
                         style_hover.color
                         } !important}
                 .section-content--menu > ul > .class-contact > a:active{color: ${
-                        data_config.second_color
+                        style_primary_color.color
                         } !important}
               .footer a:hover {color: ${data_config.primary_color} !important}
               .footer a {color: ${data_config.second_color}}
