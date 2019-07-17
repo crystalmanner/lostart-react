@@ -385,7 +385,7 @@ class ProjectTemp extends React.Component {
                     </li>
                   </ul>
                   <ul className="menu-second">
-                    <li>
+                    <li className="class-contact">
                       <GoBack style={style_second_color} />
                     </li>
                   </ul>
@@ -462,7 +462,7 @@ class ProjectTemp extends React.Component {
                       information
                         </Link>
                   </li>
-                  <li>
+                  <li >
                     <Link
                       to="/page/contact/"
                       style={style_primary_color}
@@ -525,6 +525,9 @@ class ProjectTemp extends React.Component {
         <style>
           {`
                   .section-content--menu > ul > li > a:hover {color: ${
+            style_primary_color.color
+            } !important}
+            .section-content--menu > ul > .class-contact > a:visited{color: ${
             style_primary_color.color
             } !important}
                   a.go-back:hover, .footer a:hover, .project-layout--right a:hover {color: ${
