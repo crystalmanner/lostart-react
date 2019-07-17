@@ -77,7 +77,7 @@ class PageLayout extends React.Component {
                     </h1>
                   </li>
                 </ul>
-                <ul className="menu-second-1">
+                <ul className="menu-second-2">
                   <li>
                     <GoBack style={style_second_color} />
                   </li>
