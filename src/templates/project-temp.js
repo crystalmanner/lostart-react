@@ -135,6 +135,9 @@ class ProjectTemp extends React.Component {
     const defaultBackGround = themeOptions.backgroundColorGeneral
       ? themeOptions.backgroundColorOfListingProject
       : app_config.BACKGROUND_COLOR
+    const defineHomeText = {
+      fontSize: '26px'
+    };
     let vimeo1 = "";
     let vimeo2 = "";
     let vimeo3 = "";
@@ -370,7 +373,9 @@ class ProjectTemp extends React.Component {
     }
 
     if (isMobile) {
+
       return (
+
         <div className="project-screen" style={{ background: defaultBackGround }}>
           <Meta {...meta_data} />
           <div className="project-layout">
@@ -379,7 +384,7 @@ class ProjectTemp extends React.Component {
                 <div className="section-content--menu">
                   <ul className="menu-first">
                     <li className="active">
-                      <h1>
+                      <h1 className="span-home" style={defineHomeText}>
                         <a href="https://lost-art.com" target="_blank" style={style_primary_color}>
                           {data_config.head_text}
                         </a>
@@ -439,8 +444,10 @@ class ProjectTemp extends React.Component {
         </div>
       )
     }
+
     return (
-      <div className="project-screen">
+
+      <div className="project-screen" >
         <Meta {...meta_data} />
         <div className="project-layout">
           <div className="project-layout--content">
@@ -448,11 +455,11 @@ class ProjectTemp extends React.Component {
               <div className="section-content--menu">
                 <ul className="menu-first">
                   <li className="active">
-                    <span class="span-home">
+                    <h1 class="span-home" style={defineHomeText}>
                       <a href="https://lost-art.com" style={style_primary_color}>
                         {data_config.head_text}
                       </a>
-                    </span>
+                    </h1>
                   </li>
                 </ul>
                 <ul className="menu-second">
@@ -529,9 +536,6 @@ class ProjectTemp extends React.Component {
                   .section-content--menu > ul > li > a:hover {color: ${
             style_primary_color.color
             } !important}
-            .section-content--menu > ul > li > .span-home {
-              font-size: 28px;
-            }
                   a.go-back:hover, .footer a:hover, .project-layout--right a:hover {color: ${
             style_primary_color.color
             } !important}
@@ -542,7 +546,7 @@ class ProjectTemp extends React.Component {
                   `}
         </style>
 
-      </div>
+      </div >
     );
   }
 }
