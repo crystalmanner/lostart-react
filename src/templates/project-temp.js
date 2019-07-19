@@ -132,7 +132,9 @@ class ProjectTemp extends React.Component {
         ? project.secondColorProject
         : data_config.second_color
     };
-
+    const defaultBackGround = themeOptions.backgroundColorGeneral
+      ? themeOptions.backgroundColorOfListingProject
+      : app_config.BACKGROUND_COLOR
     let vimeo1 = "";
     let vimeo2 = "";
     let vimeo3 = "";
@@ -369,7 +371,7 @@ class ProjectTemp extends React.Component {
 
     if (isMobile) {
       return (
-        <div className="project-screen">
+        <div className="project-screen" style={{ background: defaultBackGround }}>
           <Meta {...meta_data} />
           <div className="project-layout">
             <div className="project-layout--content">
