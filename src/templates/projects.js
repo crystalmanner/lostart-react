@@ -126,9 +126,11 @@ class ProjectTemp extends React.Component {
                 project={project.node}
             />
         ));
-
+        const defaultBackGround = themeOptions.backgroundColorGeneral
+            ? themeOptions.backgroundColorOfListingProject
+            : app_config.BACKGROUND_COLOR
         return (
-            <div className="project-screen">
+            <div className="project-screen" style={{ background: defaultBackGround }}>
                 <Meta {...meta_data} />
                 <div className="project-layout">
                     <div className="project-layout--content">
