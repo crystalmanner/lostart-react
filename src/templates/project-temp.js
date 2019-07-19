@@ -447,8 +447,8 @@ class ProjectTemp extends React.Component {
                 <ul className="menu-first">
                   <li className="active">
                     <h1>
-                      <a href="https://lost-art.com" style={style_primary_color}>
-                        {data_config.head_text}
+                      <a style={style_primary_color}>
+                        {project.title}
                       </a>
                     </h1>
                   </li>
