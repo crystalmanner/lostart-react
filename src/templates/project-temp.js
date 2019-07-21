@@ -22,12 +22,6 @@ class ProjectTemp extends React.Component {
     }
   }
 
-  componentWillMount() {
-    // console.log("windowpath: " + window.location.pathname)
-    this.setState({
-      location: window.location.pathname
-    })
-  }
   componentDidMount() {
     window.scrollTo(0, 0);
 
@@ -57,6 +51,9 @@ class ProjectTemp extends React.Component {
     //setTimeout(function(){ $('.footer').css({ "opacity": "1"}); }, 1000);
     document.body.style.backgroundColor = project.backgroundColorProject;
 
+    this.setState({
+      location: window.location.pathname
+    })
   }
 
   render() {
