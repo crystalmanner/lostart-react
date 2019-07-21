@@ -5,6 +5,9 @@ import * as app_config from '../constants/app';
 class Meta extends Component {
   constructor(props) {
     super(props);
+    console.log("this.props.location");
+    console.log(app_config.SITE_URL);
+    console.log(this.props.location);
   }
 
   render() {
