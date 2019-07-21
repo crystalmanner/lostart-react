@@ -4,7 +4,7 @@ let Media = (props) => {
 
     const media = props.media;
 
-    let media_html = <span className="ajax-loader"><img src='../img/ajax-loader.gif' /></span>;
+    let media_html = <span className="ajax-loader"><img src='../img/ajax-loader.gif' alt="" /></span>;
 
     const alt = media.title;
 

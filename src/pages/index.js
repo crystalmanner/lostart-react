@@ -5,7 +5,7 @@ import "swiper/dist/css/swiper.min.css";
 import Meta from "../components/Meta";
 import Footer from "../components/Footer";
 import * as app_config from "../constants/app";
-import SectionItem from "../components/SectionItem";
+// import SectionItem from "../components/SectionItem";
 import { isMobile } from "react-device-detect";
 import ProjectItem from "../components/ProjectItem";
 import $ from "jquery";
@@ -36,7 +36,6 @@ class HomePage extends Component {
     }
 
     componentDidUpdate() {
-        console.log("333")
         this.buildSwiper();
     }
 
@@ -72,16 +71,16 @@ class HomePage extends Component {
         const defaultBackGround = themeOptions.backgroundColorGeneral
             ? themeOptions.backgroundColorOfListingProject
             : app_config.BACKGROUND_COLOR
-        const sections = this.props.data.allContentfulSection.edges.map(
-            (section, index) => (
-                <SectionItem
-                    key={index}
-                    index={index}
-                    project={section.node}
-                    nextSwiper={this.nextSwiper}
-                />
-            )
-        );
+        // const sections = this.props.data.allContentfulSection.edges.map(
+        //     (section, index) => (
+        //         <SectionItem
+        //             key={index}
+        //             index={index}
+        //             project={section.node}
+        //             nextSwiper={this.nextSwiper}
+        //         />
+        //     )
+        // );
 
         let data_config = {
             head_text: themeOptions.headerOptionGeneral.headerOptionGeneral
@@ -131,8 +130,8 @@ class HomePage extends Component {
             color: data_config.primary_color
         };
 
-        let hideheader = themeOptions.hideHeaderGeneral ? "hideheader" : "";
-        let hidefooter = themeOptions.hideFooterGeneral ? "hidefooter" : "";
+        // let hideheader = themeOptions.hideHeaderGeneral ? "hideheader" : "";
+        // let hidefooter = themeOptions.hideFooterGeneral ? "hidefooter" : "";
 
         const style_hover = {
             color: !isMobile ? data_config.primary_color : ""

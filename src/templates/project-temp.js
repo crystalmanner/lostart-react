@@ -455,7 +455,7 @@ class ProjectTemp extends React.Component {
               <div className="section-content--menu">
                 <ul className="menu-first">
                   <li className="active">
-                    <h1 class="span-home" style={defineHomeText}>
+                    <h1 className="span-home" style={defineHomeText}>
                       <a href="https://lost-art.com" style={style_primary_color}>
                         {data_config.head_text}
                       </a>
@@ -546,7 +546,7 @@ class ProjectTemp extends React.Component {
                   `}
         </style>
 
-      </div >
+      </div>
     );
   }
 }

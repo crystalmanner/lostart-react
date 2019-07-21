@@ -111,9 +111,9 @@ class ProjectTemp extends React.Component {
             color: data_config.primary_color
         };
 
-        const style_second_color = {
-            color: data_config.second_color
-        };
+        // const style_second_color = {
+        //     color: data_config.second_color
+        // };
 
         const style_hover = {
             color: !isMobile ? data_config.primary_color : ""

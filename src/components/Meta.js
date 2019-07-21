@@ -18,7 +18,7 @@ class Meta extends Component {
         <meta name="keywords" content={this.props.keywords || ""} />
         <meta name="author" content="Lost art" />
         <meta name="revisit-after" content="1 days" />
-        <link rel="canonical" href="https://test.com/test123" />
+        <link rel="canonical" href={app_config.SITE_URL + (this.props.location || '')} />
       </Helmet>
     );
   }
