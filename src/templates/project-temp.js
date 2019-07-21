@@ -376,7 +376,7 @@ class ProjectTemp extends React.Component {
 
       return (
 
-        <div className="project-screen" style={{ background: defaultBackGround }}>
+        <div className="project-screen">
           <Meta {...meta_data} />
           <div className="project-layout">
             <div className="project-layout--content">
