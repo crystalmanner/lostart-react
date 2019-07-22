@@ -151,7 +151,8 @@ class ProjectTemp extends React.Component {
       ? themeOptions.backgroundColorOfListingProject
       : app_config.BACKGROUND_COLOR
     const defineHomeText = {
-      fontSize: '26px'
+      fontSize: '32px',
+      paddingBottom: '5px'
     };
     let vimeo1 = "";
     let vimeo2 = "";
@@ -399,7 +400,7 @@ class ProjectTemp extends React.Component {
                 <div className="section-content--menu">
                   <ul className="menu-first">
                     <li className="active">
-                      <h1 className="span-home" style={defineHomeText}>
+                      <h1 className="span-home">
                         <a href="https://lost-art.com" target="_blank" style={style_primary_color}>
                           {data_config.head_text}
                         </a>
@@ -421,7 +422,7 @@ class ProjectTemp extends React.Component {
                   {vimeo3}
                   {vimeo4}
                   {medias}
-                  <h1 className="ttile" style={style_primary_color}>
+                  <h1 className="ttile" style={{ ...style_primary_color, ...defineHomeText }}>
                     {project.title}
                   </h1>
 
@@ -470,7 +471,7 @@ class ProjectTemp extends React.Component {
               <div className="section-content--menu">
                 <ul className="menu-first">
                   <li className="active">
-                    <h1 className="span-home" style={defineHomeText}>
+                    <h1 className="span-home">
                       <a href="https://lost-art.com" style={style_primary_color}>
                         {data_config.head_text}
                       </a>
@@ -515,7 +516,7 @@ class ProjectTemp extends React.Component {
                 {vimeo3}
                 {vimeo4}
                 {medias}
-                <h1 className="ttile" style={style_primary_color}>
+                <h1 className="ttile" style={{ ...style_primary_color, ...defineHomeText }}>
                   {project.title}
                 </h1>
 
