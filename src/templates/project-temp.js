@@ -111,11 +111,7 @@ class ProjectTemp extends React.Component {
     if (typeof window !== `undefined`) {
       path_name = window.location.href;
     }
-    // console.log(path_name)
-    // console.log(project.metaKeywordsProject.metaKeywordsProject
-    //   ? project.metaKeywordsProject.metaKeywordsProject
-    //   : data_config.meta_title)
-    // console.log(path_name)
+
     let meta_data = {
       title: project.metaTitleProject
         ? project.metaTitleProject + ' | ' + data_config.meta_title
@@ -129,8 +125,12 @@ class ProjectTemp extends React.Component {
       robots: project.metaRobotsProject
         ? project.metaRobotsProject
         : data_config.meta_robots,
+      location: project.slug
+        ? project.slug
+        : path_name,
+
       // location: this.state.location
-      location_href: path_name
+      // location_href: path_name
       // location: project.metaKeywordsProject.metaKeywordsProject
       //   ? project.metaKeywordsProject.metaKeywordsProject
       //   : data_config.meta_title,

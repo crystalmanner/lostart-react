@@ -108,7 +108,7 @@ class ProjectTemp extends React.Component {
             keywords: data_config.meta_keywords,
             robots: data_config.meta_robots,
             // location_href: this.state.location
-            location_href: path_name
+            location: path_name
         };
 
         const style_primary_color = {
