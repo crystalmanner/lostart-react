@@ -93,7 +93,10 @@ class ProjectTemp extends React.Component {
                 ? themeOptions.footerOptionGeneral.footerOptionGeneral
                 : app_config.FOOTER_TEXT
         };
-
+        let path_name = "";
+        if (typeof window !== `undefined`) {
+            path_name = window.location.href;
+        }
         let meta_data = {
             title:
                 themeOptions.metaTitleOfListingProject !== undefined
@@ -104,7 +107,8 @@ class ProjectTemp extends React.Component {
             description: data_config.meta_description,
             keywords: data_config.meta_keywords,
             robots: data_config.meta_robots,
-            location: this.state.location
+            // location_href: this.state.location
+            location_href: path_name
         };
 
         const style_primary_color = {

@@ -112,6 +112,10 @@ class ProjectTemp extends React.Component {
       path_name = window.location.href;
     }
     // console.log(path_name)
+    // console.log(project.metaKeywordsProject.metaKeywordsProject
+    //   ? project.metaKeywordsProject.metaKeywordsProject
+    //   : data_config.meta_title)
+    // console.log(path_name)
     let meta_data = {
       title: project.metaTitleProject
         ? project.metaTitleProject + ' | ' + data_config.meta_title
@@ -126,10 +130,10 @@ class ProjectTemp extends React.Component {
         ? project.metaRobotsProject
         : data_config.meta_robots,
       // location: this.state.location
-      // location: path_name
-      location: project.metaKeywordsProject.metaKeywordsProject
-        ? project.metaKeywordsProject.metaKeywordsProject
-        : data_config.meta_title,
+      location_href: path_name
+      // location: project.metaKeywordsProject.metaKeywordsProject
+      //   ? project.metaKeywordsProject.metaKeywordsProject
+      //   : data_config.meta_title,
     };
 
     const style_primary_color = {
