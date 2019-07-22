@@ -1,5 +1,5 @@
 export const SITE_NAME = 'lost art';
-export const SITE_URL = 'https://www.lost-art.com';
+export const SITE_URL = 'https://www.lost-art.com/';
 
 export const PRIMARY_COLOR = '#000';
 export const SECONDARY_COLOR = '#9e9e9e';
