@@ -8,11 +8,11 @@ class Meta extends Component {
   }
 
   render() {
-    let path_name = "";
-    if (typeof window !== `undefined`) {
-      path_name = window.location.href;
-    }
-    console.log(path_name)
+    // let path_name = "";
+    // if (typeof window !== `undefined`) {
+    //   path_name = window.location.href;
+    // }
+    // console.log(path_name)
     return (
       <Helmet>
         <title>{this.props.title || ""}</title>
@@ -23,8 +23,8 @@ class Meta extends Component {
         <meta name="keywords" content={this.props.keywords || ""} />
         <meta name="author" content="Lost art" />
         <meta name="revisit-after" content="1 days" />
-        {/* <link rel="canonical" href={app_config.SITE_URL + (this.props.location || '')} /> */}
-        <link rel="canonical" href={app_config.SITE_URL + (path_name || '')} />
+        <link rel="canonical" href={app_config.SITE_URL + (this.props.location || '')} />
+        {/* <link rel="canonical" href={app_config.SITE_URL + (path_name || '')} /> */}
       </Helmet>
     );
   }

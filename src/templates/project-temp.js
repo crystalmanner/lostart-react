@@ -61,6 +61,9 @@ class ProjectTemp extends React.Component {
     const themeOptions = this.props.data.allContentfulGeneralOptions.edges[0]
       .node;
     let medias = "";
+    // if (typeof window !== `undefined`) {
+    //   console.log(window.location.href);
+    // }
 
     if (project.medias !== undefined) {
       medias = project.medias.map((media, index) => (
@@ -104,7 +107,10 @@ class ProjectTemp extends React.Component {
         ? themeOptions.footerOptionGeneral.footerOptionGeneral
         : app_config.FOOTER_TEXT
     };
-
+    let path_name = "";
+    if (typeof window !== `undefined`) {
+      path_name = window.location.href;
+    }
     let meta_data = {
       title: project.metaTitleProject
         ? project.metaTitleProject + ' | ' + data_config.meta_title
@@ -118,7 +124,8 @@ class ProjectTemp extends React.Component {
       robots: project.metaRobotsProject
         ? project.metaRobotsProject
         : data_config.meta_robots,
-      location: this.state.location
+      // location: this.state.location
+      location: path_name
     };
 
     const style_primary_color = {
