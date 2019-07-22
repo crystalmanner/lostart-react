@@ -12,9 +12,9 @@ class PageLayout extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {
-      location: ""
-    }
+    // this.state = {
+    //   location: ""
+    // }
   }
 
   componentDidMount() {
@@ -45,9 +45,9 @@ class PageLayout extends React.Component {
     //setTimeout(function(){ $('.footer').css({ "opacity": "1"}); }, 300);
     document.body.style.backgroundColor = page.backgroundColorPage
 
-    this.setState({
-      location: window.location.pathname
-    })
+    // this.setState({
+    //   location: window.location.pathname
+    // })
 
   }
 
@@ -63,7 +63,7 @@ class PageLayout extends React.Component {
 
     return (
       <div className="page-screen">
-        <Meta {...meta_data} {...this.state} />
+        <Meta {...meta_data} />
         <div className="project-layout display-table">
           <div className="project-layout--content">
             <div className="project-layout--left">
