@@ -12,7 +12,7 @@ class Meta extends Component {
     // if (typeof window !== `undefined`) {
     //   path_name = window.location.href;
     // }
-    console.log(this.props.location)
+    // console.log(this.props.location)
     return (
       <Helmet>
         <title>{this.props.title || ""}</title>

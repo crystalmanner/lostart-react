@@ -68,7 +68,7 @@ class PageContentfulTemplate extends React.Component {
         ? page.metaRobotsPage
         : data_config.meta_robots,
       location: page.slug
-        ? page.slug
+        ? "page/" + page.slug
         : path_name,
     };
 
