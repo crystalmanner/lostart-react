@@ -47,6 +47,10 @@ class PageContentfulTemplate extends React.Component {
         ? themeOptions.footerOptionGeneral.footerOptionGeneral
         : app_config.FOOTER_TEXT
     };
+    let path_name = "";
+    if (typeof window !== `undefined`) {
+      path_name = window.location.href;
+    }
 
     let meta_data = {
       title:
@@ -62,7 +66,10 @@ class PageContentfulTemplate extends React.Component {
         : data_config.meta_keywords,
       robots: page.metaRobotsPage
         ? page.metaRobotsPage
-        : data_config.meta_robots
+        : data_config.meta_robots,
+      location: page.slug
+        ? page.slug
+        : path_name,
     };
 
     const style_primary_color = {
