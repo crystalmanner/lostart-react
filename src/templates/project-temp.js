@@ -428,7 +428,7 @@ class ProjectTemp extends React.Component {
 
                   <h2
                     className="sub-ttile desc m-b-35"
-                    style={style_second_color}
+                    style={{ ...style_second_color, ...defineHomeText }}
                   >
                     {project.description.description}
                   </h2>
@@ -522,7 +522,7 @@ class ProjectTemp extends React.Component {
 
                 <h2
                   className="sub-ttile desc m-b-35"
-                  style={style_second_color}
+                  style={{ ...style_second_color, ...defineHomeText }}
                 >
                   {project.description.description}
                 </h2>
