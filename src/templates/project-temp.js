@@ -151,8 +151,8 @@ class ProjectTemp extends React.Component {
       ? themeOptions.backgroundColorOfListingProject
       : app_config.BACKGROUND_COLOR
     const defineHomeText = {
-      fontSize: '32px',
-      paddingBottom: '5px',
+      // fontSize: '32px',
+      // paddingBottom: '5px',
       lineHeight: 'normal',
     };
     let vimeo1 = "";
