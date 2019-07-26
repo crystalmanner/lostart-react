@@ -152,7 +152,8 @@ class ProjectTemp extends React.Component {
       : app_config.BACKGROUND_COLOR
     const defineHomeText = {
       fontSize: '32px',
-      paddingBottom: '5px'
+      paddingBottom: '5px',
+      lineHeight: 'normal',
     };
     let vimeo1 = "";
     let vimeo2 = "";
