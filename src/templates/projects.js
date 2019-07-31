@@ -148,7 +148,7 @@ class ProjectTemp extends React.Component {
                         <div className="project-layout--left">
                             <div className="section-content--menu">
                                 <ul className="menu-first">
-                                    <li className="active">
+                                    <li className="active" >
                                         <h1>
                                             <a href="https://lost-art.com" style={style_primary_color}>
                                                 {data_config.head_text}
@@ -157,7 +157,7 @@ class ProjectTemp extends React.Component {
                                     </li>
                                 </ul>
                                 <ul className="menu-second">
-                                    <li className="m-r-10">
+                                    <li className="m-r-10" style={{ Height: '18px' }}>
                                         <h1>
                                             <Link
                                                 to="/page/about-us/"
@@ -167,7 +167,7 @@ class ProjectTemp extends React.Component {
                                         </Link>
                                         </h1>
                                     </li>
-                                    <li className="class-contact">
+                                    <li className="class-contact" style={{ Height: '18px' }}>
                                         <h1>
                                             <Link
                                                 to="/page/contact/"
@@ -179,7 +179,7 @@ class ProjectTemp extends React.Component {
                                     </li>
                                 </ul>
                                 <ul className="menu-third only_desktop">
-                                    <li>
+                                    <li style={{ paddingTop: '2px' }}>
                                         <Link
                                             to="/page/bio-in-japanese/"
                                             style={style_primary_color}
