@@ -12,15 +12,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 body, button, html, input, p, select, textarea {
-  // font-family: akzidenz-grotesk !important;
+  font-family: akzidenz-grotesk !important;
   font-size: 22px;
   letter-spacing: -.4px;
   font-weight: 400;
   line-height: 22px
 }
-button, html, input, p, select, textarea {
-  font-family: akzidenz-grotesk !important;
-}
+
 .project-layout--right h1, .project-layout--right h2, .project-layout--right h3,
 .section-content--menu h1, .section-content--menu h2,
 .project-item--left h2, .project-item--left h3 {
