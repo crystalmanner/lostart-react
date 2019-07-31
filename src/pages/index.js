@@ -171,20 +171,24 @@ class HomePage extends Component {
                                     </ul>
                                     <ul className="menu-second">
                                         <li className="m-r-10">
-                                            <Link
-                                                to="/page/about-us/"
-                                                style={style_primary_color}
-                                            >
-                                                information
+                                            <h1>
+                                                <Link
+                                                    to="/page/about-us/"
+                                                    style={style_primary_color}
+                                                >
+                                                    information
                                         </Link>
+                                            </h1>
                                         </li>
                                         <li className="class-contact">
-                                            <Link
-                                                to="/page/contact/"
-                                                style={style_primary_color}
-                                            >
-                                                contact
+                                            <h1>
+                                                <Link
+                                                    to="/page/contact/"
+                                                    style={style_primary_color}
+                                                >
+                                                    contact
                                         </Link>
+                                            </h1>
                                         </li>
                                     </ul>
                                     <ul className="menu-third only_desktop">
