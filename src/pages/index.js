@@ -70,14 +70,7 @@ class HomePage extends Component {
             .node;
         const defaultBackGround = themeOptions.backgroundColorGeneral
             ? themeOptions.backgroundColorOfListingProject
-            : app_config.BACKGROUND_COLOR;
-
-        const defineBodyFont = isMobile ? '6.25vw' : '22px';
-
-        const defineBodyStyle = {
-            backgroundColor: defaultBackGround,
-            fontSize: defineBodyFont,
-        }
+            : app_config.BACKGROUND_COLOR
         // const sections = this.props.data.allContentfulSection.edges.map(
         //     (section, index) => (
         //         <SectionItem
@@ -152,8 +145,8 @@ class HomePage extends Component {
             />
         ));
         return (
-            <div className="home-screen" style={defineBodyStyle}>
-                <div className="project-screen" style={defineBodyStyle}>
+            <div className="home-screen" style={{ background: defaultBackGround }}>
+                <div className="project-screen" style={{ background: defaultBackGround }}>
                     <Meta {...meta_data} />
                     <div className="project-layout">
                         <div className="project-layout--content">
