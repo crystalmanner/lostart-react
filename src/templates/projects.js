@@ -138,7 +138,7 @@ class ProjectTemp extends React.Component {
         const defineBodyStyle = {
             backgroundColor: defaultBackGround,
             fontSize: defineBodyFont,
-            fontFamily: 'inherit'
+            fontFamily: 'font-family: akzidenz-grotesk;'
         }
         return (
             <div className="project-screen" style={defineBodyStyle}>

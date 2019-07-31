@@ -155,7 +155,7 @@ class ProjectTemp extends React.Component {
     const defineBodyStyle = {
       // backgroundColor: defaultBackGround,
       fontSize: defineBodyFont,
-      fontFamily: 'inherit'
+      fontFamily: 'akzidenz-grotesk;'
     }
     const defineHomeText = {
       // fontSize: '32px',
