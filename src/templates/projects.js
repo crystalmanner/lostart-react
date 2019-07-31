@@ -148,7 +148,7 @@ class ProjectTemp extends React.Component {
                         <div className="project-layout--left">
                             <div className="section-content--menu">
                                 <ul className="menu-first">
-                                    <li className="active" >
+                                    <li className="active" style={{ height: '20px' }} >
                                         <h1>
                                             <a href="https://lost-art.com" style={style_primary_color}>
                                                 {data_config.head_text}
@@ -157,7 +157,7 @@ class ProjectTemp extends React.Component {
                                     </li>
                                 </ul>
                                 <ul className="menu-second">
-                                    <li className="m-r-10" style={{ Height: '18px' }}>
+                                    <li className="m-r-10" style={{ height: '18px' }}>
                                         <h1>
                                             <Link
                                                 to="/page/about-us/"
@@ -167,7 +167,7 @@ class ProjectTemp extends React.Component {
                                         </Link>
                                         </h1>
                                     </li>
-                                    <li className="class-contact" style={{ Height: '18px' }}>
+                                    <li className="class-contact" style={{ height: '18px' }}>
                                         <h1>
                                             <Link
                                                 to="/page/contact/"
