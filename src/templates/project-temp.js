@@ -149,7 +149,14 @@ class ProjectTemp extends React.Component {
     };
     const defaultBackGround = themeOptions.backgroundColorGeneral
       ? themeOptions.backgroundColorOfListingProject
-      : app_config.BACKGROUND_COLOR
+      : app_config.BACKGROUND_COLOR;
+    const defineBodyFont = isMobile ? '6.25vw' : '22px';
+
+    const defineBodyStyle = {
+      // backgroundColor: defaultBackGround,
+      fontSize: defineBodyFont,
+      fontFamily: 'inherit'
+    }
     const defineHomeText = {
       // fontSize: '32px',
       // paddingBottom: '5px',
@@ -393,7 +400,7 @@ class ProjectTemp extends React.Component {
 
       return (
 
-        <div className="project-screen">
+        <div className="project-screen" style={defineBodyStyle}>
           <Meta {...meta_data} />
           <div className="project-layout">
             <div className="project-layout--content">
@@ -464,7 +471,7 @@ class ProjectTemp extends React.Component {
 
     return (
 
-      <div className="project-screen" >
+      <div className="project-screen" style={defineBodyStyle}>
         <Meta {...meta_data} />
         <div className="project-layout">
           <div className="project-layout--content">

@@ -60,9 +60,14 @@ class PageLayout extends React.Component {
       page
     } = this.props;
 
+    const defineBodyFont = isMobile ? '6.25vw' : '22px';
 
+    const defineBodyStyle = {
+      fontSize: defineBodyFont,
+      fontFamily: 'inherit',
+    }
     return (
-      <div className="page-screen">
+      <div className="page-screen" style={defineBodyStyle}>
         <Meta {...meta_data} />
         <div className="project-layout display-table">
           <div className="project-layout--content">
