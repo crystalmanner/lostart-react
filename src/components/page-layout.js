@@ -64,7 +64,7 @@ class PageLayout extends React.Component {
 
     const defineBodyStyle = {
       fontSize: defineBodyFont,
-      fontFamily: 'akzidenz-grotesk;',
+      fontFamily: 'akzidenz-grotesk',
     }
     return (
       <div className="page-screen" style={defineBodyStyle}>

@@ -33,6 +33,9 @@ class HomePage extends Component {
         setTimeout(function () {
             $(".footer").css({ opacity: "1" });
         }, 300);
+        // setTimeout(function () {
+        //     $(".home-screen").css({ opacity: "0" });
+        // }, 30000);
     }
 
     componentDidUpdate() {
@@ -77,7 +80,7 @@ class HomePage extends Component {
         const defineBodyStyle = {
             backgroundColor: defaultBackGround,
             fontSize: defineBodyFont,
-            fontFamily: 'akzidenz-grotesk;',
+            fontFamily: 'akzidenz-grotesk',
         }
         // const sections = this.props.data.allContentfulSection.edges.map(
         //     (section, index) => (
@@ -161,7 +164,7 @@ class HomePage extends Component {
                             <div className="project-layout--left">
                                 <div className="section-content--menu">
                                     <ul className="menu-first">
-                                        <li className="active">
+                                        <li className="active" style={{ height: '20px' }}>
                                             <h1>
                                                 <a href="https://lost-art.com" style={style_primary_color}>
                                                     {data_config.head_text}
@@ -170,7 +173,7 @@ class HomePage extends Component {
                                         </li>
                                     </ul>
                                     <ul className="menu-second">
-                                        <li className="m-r-10">
+                                        <li className="m-r-10" style={{ height: '18px' }}>
                                             <h1>
                                                 <Link
                                                     to="/page/about-us/"
@@ -180,7 +183,7 @@ class HomePage extends Component {
                                         </Link>
                                             </h1>
                                         </li>
-                                        <li className="class-contact">
+                                        <li className="class-contact" style={{ height: '18px' }}>
                                             <h1>
                                                 <Link
                                                     to="/page/contact/"
@@ -191,7 +194,7 @@ class HomePage extends Component {
                                             </h1>
                                         </li>
                                     </ul>
-                                    <ul className="menu-third only_desktop">
+                                    <ul className="menu-third only_desktop" style={{ paddingTop: '2px' }}>
                                         <li>
                                             <Link
                                                 to="/page/bio-in-japanese/"
