@@ -77,7 +77,7 @@ class HomePage extends Component {
         const defineBodyStyle = {
             backgroundColor: defaultBackGround,
             fontSize: defineBodyFont,
-            fontFamily: 'font-family: akzidenz-grotesk;',
+            fontFamily: 'akzidenz-grotesk;',
         }
         // const sections = this.props.data.allContentfulSection.edges.map(
         //     (section, index) => (
