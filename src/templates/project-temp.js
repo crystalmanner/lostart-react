@@ -55,11 +55,14 @@ class ProjectTemp extends React.Component {
       location: window.location.pathname
     })
 
+  }
+
+  componentDidUpdate() {
     $(".project-screen").css({ opacity: "0" });
 
     setTimeout(function () {
       $(".project-screen").css({ opacity: "1" });
-    }, 300);
+    }, 200);
   }
 
   render() {

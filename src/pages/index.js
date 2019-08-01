@@ -36,14 +36,14 @@ class HomePage extends Component {
         // setTimeout(function () {
         //     $(".home-screen").css({ opacity: "0" });
         // }, 30000);
+    }
+
+    componentDidUpdate() {
         $(".project-screen").css({ opacity: "0" });
 
         setTimeout(function () {
             $(".project-screen").css({ opacity: "1" });
-        }, 300);
-    }
-
-    componentDidUpdate() {
+        }, 200);
         this.buildSwiper();
     }
 

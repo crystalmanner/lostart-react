@@ -48,12 +48,14 @@ class PageLayout extends React.Component {
     // this.setState({
     //   location: window.location.pathname
     // })
+  }
+
+  componentDidUpdate() {
     $(".page-screen").css({ opacity: "0" });
 
     setTimeout(function () {
       $(".page-screen").css({ opacity: "1" });
-    }, 300);
-
+    }, 200);
   }
 
   render() {
