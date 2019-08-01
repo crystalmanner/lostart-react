@@ -10,6 +10,7 @@ import { isMobile } from "react-device-detect";
 import ProjectItem from "../components/ProjectItem";
 import $ from "jquery";
 import "../sass/app.scss";
+import "../css/app.css";
 
 class HomePage extends Component {
 

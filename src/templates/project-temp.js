@@ -65,7 +65,6 @@ class ProjectTemp extends React.Component {
     // if (typeof window !== `undefined`) {
     //   console.log(window.location.href);
     // }
-    console.log(isMobile)
     if (project.medias !== undefined) {
       medias = project.medias.map((media, index) => (
         <Media media={media} key={index} />
