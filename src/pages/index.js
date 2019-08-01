@@ -39,11 +39,6 @@ class HomePage extends Component {
     }
 
     componentDidUpdate() {
-        $(".project-screen").css({ opacity: "0" });
-
-        setTimeout(function () {
-            $(".project-screen").css({ opacity: "1" });
-        }, 200);
         this.buildSwiper();
     }
 

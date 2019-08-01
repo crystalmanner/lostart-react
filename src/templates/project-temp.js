@@ -57,14 +57,6 @@ class ProjectTemp extends React.Component {
 
   }
 
-  componentDidUpdate() {
-    $(".project-screen").css({ opacity: "0" });
-
-    setTimeout(function () {
-      $(".project-screen").css({ opacity: "1" });
-    }, 200);
-  }
-
   render() {
     const project = this.props.data.contentfulProject;
     const themeOptions = this.props.data.allContentfulGeneralOptions.edges[0]
@@ -73,7 +65,7 @@ class ProjectTemp extends React.Component {
     // if (typeof window !== `undefined`) {
     //   console.log(window.location.href);
     // }
-
+    console.log(isMobile)
     if (project.medias !== undefined) {
       medias = project.medias.map((media, index) => (
         <Media media={media} key={index} />
@@ -426,7 +418,7 @@ class ProjectTemp extends React.Component {
                   </ul>
                   <ul className="menu-second-1">
                     <li>
-                      <GoBack style={style_second_color} />
+                      <GoBack style={{ ...style_second_color, ...defineBodyStyle }} />
                     </li>
                   </ul>
                 </div>

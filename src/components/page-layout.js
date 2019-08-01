@@ -50,14 +50,6 @@ class PageLayout extends React.Component {
     // })
   }
 
-  componentDidUpdate() {
-    $(".page-screen").css({ opacity: "0" });
-
-    setTimeout(function () {
-      $(".page-screen").css({ opacity: "1" });
-    }, 200);
-  }
-
   render() {
     const {
       data_config,
@@ -91,7 +83,7 @@ class PageLayout extends React.Component {
                 </ul>
                 <ul className="menu-second-1">
                   <li>
-                    <GoBack style={style_second_color} />
+                    <GoBack style={{ ...style_second_color, ...defineBodyStyle }} />
                   </li>
                 </ul>
                 {
