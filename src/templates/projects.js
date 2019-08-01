@@ -8,6 +8,7 @@ import Meta from "../components/Meta";
 import Footer from "../components/Footer";
 import ProjectItem from "../components/ProjectItem";
 import $ from "jquery";
+import { SSL_OP_EPHEMERAL_RSA } from "constants";
 
 class ProjectTemp extends React.Component {
     constructor(props) {
@@ -50,7 +51,14 @@ class ProjectTemp extends React.Component {
         this.setState({
             location: window.location.pathname
         });
+
+        $(".project-screen").css({ opacity: "0" });
+
+        setTimeout(function () {
+            $(".project-screen").css({ opacity: "1" });
+        }, 300);
     }
+
 
     render() {
         const projects = this.props.data.allContentfulProject.edges;

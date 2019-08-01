@@ -36,6 +36,11 @@ class HomePage extends Component {
         // setTimeout(function () {
         //     $(".home-screen").css({ opacity: "0" });
         // }, 30000);
+        $(".project-screen").css({ opacity: "0" });
+
+        setTimeout(function () {
+            $(".project-screen").css({ opacity: "1" });
+        }, 300);
     }
 
     componentDidUpdate() {
