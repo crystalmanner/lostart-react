@@ -27,7 +27,7 @@ const getTransitionStyles = {
 };
 
 const GlobalStyle = createGlobalStyle`
-  @import url('../css/Akzidenz-Grotest');
+  @import url('../css/Akzidenz-Grotesk');
   * {
     box-sizing: border-box;
   }
