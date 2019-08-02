@@ -1,7 +1,7 @@
 import React from "react";
 //import React, { Children } from "react";
 import { Link } from "gatsby";
-import { isMobile } from 'react-device-detect'
+// import { isMobile } from 'react-device-detect'
 import Meta from "../components/Meta";
 import Footer from "../components/Footer";
 import GoBack from "../components/GoBack";
@@ -59,6 +59,10 @@ class PageLayout extends React.Component {
       page
     } = this.props;
 
+    let isMobile = false;
+    if ($(window).width() <= 768) {
+      isMobile = true;
+    }
     const defineBodyFont = isMobile ? '6.25vw' : '22px';
 
     const defineBodyStyle = {

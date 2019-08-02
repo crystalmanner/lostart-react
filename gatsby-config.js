@@ -45,6 +45,17 @@ module.exports = {
             }
         },
         `gatsby-transformer-sharp`,
+        `gatsby-plugin-styled-components`,
+        // {
+        //     resolve: 'gatsby-plugin-web-font-loader',
+        //     options: {
+        //         families: ['akzidenz-grotesk', 'akzidenz-grotesk']
+        //         // google: {
+        //         //     // families: ['Droid Sans', 'Droid Serif']
+        //         //     families: ['akzidenz-grotesk', 'akzidenz-grotesk']
+        //         // }
+        //     }
+        // },
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-google-analytics`,

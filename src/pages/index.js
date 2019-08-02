@@ -6,7 +6,7 @@ import Meta from "../components/Meta";
 import Footer from "../components/Footer";
 import * as app_config from "../constants/app";
 // import SectionItem from "../components/SectionItem";
-import { isMobile } from "react-device-detect";
+// import { isMobile } from "react-device-detect";
 import ProjectItem from "../components/ProjectItem";
 import $ from "jquery";
 import "../sass/app.scss";
@@ -21,6 +21,10 @@ class HomePage extends Component {
         // if (themeOptions.hideHomepageGeneral) {
         //     return window.location.pathname = "/projects"
         // }
+        let isMobile = false;
+        if ($(window).width() <= 768) {
+          isMobile = true;
+        }
 
         if (!isMobile) {
             if ($(".nano").length > 0) {
@@ -76,6 +80,10 @@ class HomePage extends Component {
             ? themeOptions.backgroundColorOfListingProject
             : app_config.BACKGROUND_COLOR;
 
+        let isMobile = false;
+        if ($(window).width() <= 768) {
+            isMobile = true;
+        }
         const defineBodyFont = isMobile ? '6.25vw' : '22px';
 
         const defineBodyStyle = {

@@ -1,5 +1,6 @@
 import React from "react";
 // import renderHTML from 'react-render-html'
+import { createGlobalStyle } from "styled-components";
 
 import {
     TransitionGroup,
@@ -25,6 +26,21 @@ const getTransitionStyles = {
     }
 };
 
+const GlobalStyle = createGlobalStyle`
+  @import url('../css/Akzidenz-Grotest');
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'akzidenz-grotesk', sans-serif;
+    font-size: 18px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'akzidenz-grotesk', sans-serif;
+  }
+`;
+
 class Layout extends React.PureComponent {
     render() {
         //Destructuring props to avoid garbage this.props... in return statement
@@ -33,6 +49,7 @@ class Layout extends React.PureComponent {
         return (
             //Using TransitionGroup and ReactTransition which are both
             //coming from  'react-transition-group' and are required for transitions to work
+
             <TransitionGroup>
                 <ReactTransition
                     //the key is necessary here because our ReactTransition needs to know when pages are entering/exiting the DOM
@@ -43,13 +60,16 @@ class Layout extends React.PureComponent {
                         exit: timeout
                     }}
                 >
+
                     {//Application of the styles depending on the status of page(entering, exiting, entered) in the DOM
                         status => (
+
                             <div
                                 style={{
                                     ...getTransitionStyles[status]
                                 }}
                             >
+                                <GlobalStyle />
                                 {children}
                             </div>
                         )}
