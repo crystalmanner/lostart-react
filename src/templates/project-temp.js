@@ -152,9 +152,12 @@ class ProjectTemp extends React.Component {
       : app_config.BACKGROUND_COLOR;
 
     let isMobile = false;
-    if ($(window).width() <= 768) {
-      isMobile = true;
+    if (typeof window !== `undefined`) {
+      if ($(window).width() <= 768) {
+        isMobile = true;
+      }
     }
+
     const defineBodyFont = isMobile ? '6.25vw' : '22px';
     const defineBodyStyle = {
       // backgroundColor: defaultBackGround,

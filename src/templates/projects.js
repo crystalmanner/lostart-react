@@ -121,8 +121,10 @@ class ProjectTemp extends React.Component {
         //     color: data_config.second_color
         // };
         let isMobile = false;
-        if ($(window).width() <= 768) {
-            isMobile = true;
+        if (typeof window !== `undefined`) {
+            if ($(window).width() <= 768) {
+                isMobile = true;
+            }
         }
         const style_hover = {
             color: !isMobile ? data_config.primary_color : ""
