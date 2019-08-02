@@ -27,7 +27,7 @@ const getTransitionStyles = {
 };
 
 const GlobalStyle = createGlobalStyle`
-  @import url('../css/Akzidenz-Grotesk');
+  @import url(//db.onlinewebfonts.com/c/7dee4e8052171a216cd2446ea682b742?family=Berthold+Akzidenz+Grotesk+BE);
   * {
     box-sizing: border-box;
   }
