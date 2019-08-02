@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import * as app_config from "../constants/app";
 import renderHTML from "react-render-html";
-// import { isMobile } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 
 import Meta from "../components/Meta";
 import Media from "../components/Media";
@@ -150,13 +150,6 @@ class ProjectTemp extends React.Component {
     const defaultBackGround = themeOptions.backgroundColorGeneral
       ? themeOptions.backgroundColorOfListingProject
       : app_config.BACKGROUND_COLOR;
-
-    let isMobile = false;
-    if (typeof window !== `undefined`) {
-      if ($(window).width() <= 768) {
-        isMobile = true;
-      }
-    }
 
     const defineBodyFont = isMobile ? '6.25vw' : '22px';
     const defineBodyStyle = {

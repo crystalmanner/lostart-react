@@ -2,7 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 
 import * as app_config from "../constants/app";
-// import { isMobile } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 
 import Meta from "../components/Meta";
 import Footer from "../components/Footer";
@@ -120,12 +120,6 @@ class ProjectTemp extends React.Component {
         // const style_second_color = {
         //     color: data_config.second_color
         // };
-        let isMobile = false;
-        if (typeof window !== `undefined`) {
-            if ($(window).width() <= 768) {
-                isMobile = true;
-            }
-        }
         const style_hover = {
             color: !isMobile ? data_config.primary_color : ""
         };

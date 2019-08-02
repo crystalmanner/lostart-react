@@ -19,6 +19,10 @@ body, button, html, input, p, select, textarea {
   line-height: 22px
 }
 
+.wf-loading {
+  visibility: hidden;
+}
+
 .project-layout--right h1, .project-layout--right h2, .project-layout--right h3,
 .section-content--menu h1, .section-content--menu h2,
 .project-item--left h2, .project-item--left h3 {
