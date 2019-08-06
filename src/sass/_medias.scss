@@ -324,11 +324,11 @@
 @media only screen and (max-width: 900px) {
   .menu-second li a {
     font-size: 6.25vw;
-    line-height: 6.25vw;
+    line-height: 6.25vw !important;
 
   }
   .menu-second-1 li a {
     font-size: 6.25vw;
-    line-height: 6.25vw;
+    line-height: 6.25vw !important;
   }
 }
