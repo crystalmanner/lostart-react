@@ -315,14 +315,17 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .vimeo_wrap iframe {
     height: 49vw;
   }
   .menu-second .m-r-10 a {
     font-size: 6.25vw;
+    line-height: 6.25vw;
+
   }
   .menu-second-1 .m-r-10 a {
     font-size: 6.25vw;
+    line-height: 6.25vw;
   }
 }
