@@ -314,3 +314,9 @@
     position: fixed;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .vimeo_wrap iframe {
+    height: 49vw;
+  }
+}

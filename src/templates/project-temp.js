@@ -225,7 +225,7 @@ class ProjectTemp extends React.Component {
             <div className="card card-3x2 card-vimeo">
               <div className="card-content" style={vimeo_thumb_1}>
                 <Vimeo
-                  className="vimeo_wrap"
+                  className="vimeo_wrap mobileVimeo"
                   video={project.vimeo1Project}
                   muted={false}
                   autoplay={false}
@@ -276,7 +276,7 @@ class ProjectTemp extends React.Component {
             <div className="card card-3x2 card-vimeo">
               <div className="card-content" style={vimeo_thumb_2}>
                 <Vimeo
-                  className="vimeo_wrap"
+                  className="vimeo_wrap mobileVimeo"
                   video={project.vimeo2Project}
                   muted={false}
                   autoplay={false}
@@ -326,7 +326,7 @@ class ProjectTemp extends React.Component {
             <div className="card card-3x2 card-vimeo">
               <div className="card-content" style={vimeo_thumb_3}>
                 <Vimeo
-                  className="vimeo_wrap"
+                  className="vimeo_wrap mobileVimeo"
                   video={project.vimeo3Project}
                   muted={false}
                   autoplay={false}
@@ -376,7 +376,7 @@ class ProjectTemp extends React.Component {
             <div className="card card-3x2 card-vimeo">
               <div className="card-content" style={vimeo_thumb_4}>
                 <Vimeo
-                  className="vimeo_wrap"
+                  className="vimeo_wrap mobileVimeo"
                   video={project.vimeo4Project}
                   muted={false}
                   autoplay={false}
