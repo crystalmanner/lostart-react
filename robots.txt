@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://lost-art.com/sitemap.xml
