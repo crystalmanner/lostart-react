@@ -6,12 +6,13 @@ if (process.env.NODE_ENV !== "production") {
 
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.lost-art.com/`,
+        siteUrl: `https://lost-art.com/`,
     },
 
     plugins: [
         `gatsby-plugin-layout`,
         `gatsby-plugin-sass`,
+        `gatsby-plugin-sitemap`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
