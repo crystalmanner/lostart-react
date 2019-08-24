@@ -165,33 +165,27 @@ class HomePage extends Component {
                                 <div className="section-content--menu">
                                     <ul className="menu-first">
                                         <li className="active" style={{ height: '20px' }}>
-                                            <h1>
-                                                <a href="https://lost-art.com" style={style_primary_color}>
-                                                    {data_config.head_text}
-                                                </a>
-                                            </h1>
+                                            <a href="https://lost-art.com" style={style_primary_color}>
+                                                {data_config.head_text}
+                                            </a>
                                         </li>
                                     </ul>
                                     <ul className="menu-second">
                                         <li className="m-r-10" style={{ height: '18px' }}>
-                                            <h1>
-                                                <Link
-                                                    to="/page/about-us/"
-                                                    style={style_primary_color}
-                                                >
-                                                    information
-                                        </Link>
-                                            </h1>
+                                            <Link
+                                                to="/page/about-us/"
+                                                style={style_primary_color}
+                                            >
+                                                information
+                                            </Link>
                                         </li>
                                         <li className="class-contact" style={{ height: '18px' }}>
-                                            <h1>
-                                                <Link
-                                                    to="/page/contact/"
-                                                    style={style_primary_color}
-                                                >
-                                                    contact
-                                        </Link>
-                                            </h1>
+                                            <Link
+                                                to="/page/contact/"
+                                                style={style_primary_color}
+                                            >
+                                                contact
+                                            </Link>
                                         </li>
                                     </ul>
                                     <ul className="menu-third only_desktop" style={{ paddingTop: '2px' }}>
