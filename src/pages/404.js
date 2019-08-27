@@ -152,7 +152,7 @@ class NotFound extends React.Component {
                                 <div className="content">
                                     <p className="m-b-5">oops, something went wrong</p>
                                     <p className="m-b-0">
-                                        <a href="http://lost-art.com/" title="lost art">click here</a> to go to <span>lost-art.com</span>
+                                        <a href="https://lost-art.com/" title="lost art">click here</a> to go to <span>lost-art.com</span>
                                     </p>
                                 </div>
                             </div>
