@@ -1,12 +1,102 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <title>Error page</title>
+    <!-- <link rel="stylesheet" href="src/css/app.css">
+    <link rel="stylesheet" href="src/sass/app.scss">
+    <link rel="stylesheet" href="src/sass/_medias.scss"> -->
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .screen404 {
+            background-color: white;
+            font-family: 'akzidenz-grotesk';
+        }
+
+        a:active {
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        body {
+            font-family: akzidenz-grotesk !important;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .screen404 {
+                font-size: 6.25vw;
+            }
+        }
+
+        @media only screen and (min-width: 901px) {
+            .screen404 {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <h1>Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div class="home-screen screen404">
+        <div class="project-screen screen404">
+            <Meta {...meta_data} />
+            <div class="project-layout">
+                <div class="project-layout--content">
+                    <div class="project-layout--left">
+                        <div class="section-content--menu">
+                            <ul class="menu-first">
+                                <li class="active" style="height: 20px">
+                                    <a href="https://lost-art.com">
+                                        lost art
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="menu-second">
+                                <li class="m-r-10" style=" height: 18px ">
+                                    <a href="https://lost-art.com/page/about-us/">
+                                        information
+                                    </a>
+                                </li>
+                                <li class="class-contact" style=" height: 18px ">
+                                    <a href="https://lost-art.com/page/contact/">
+                                        contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="menu-third only_desktop" style=" padding-top: 2px ">
+                                <li>
+                                    <a href="https://lost-art.com/page/bio-in-japanese/">
+                                        日本語
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-layout--right">
+                        <div class="main-content">
+                            oops, something went wrong. <br>
+                            click here to go to lost-art.com
+                        </div>
+
+                        <div class="footer">
+                            <div>
+                                <span>
+                                    ©footer is updatable in cms link ipsum
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
+</html>

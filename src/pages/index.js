@@ -165,9 +165,11 @@ class HomePage extends Component {
                                 <div className="section-content--menu">
                                     <ul className="menu-first">
                                         <li className="active" style={{ height: '20px' }}>
-                                            <a href="https://lost-art.com" style={style_primary_color}>
-                                                {data_config.head_text}
-                                            </a>
+                                            <h1>
+                                                <a href="https://lost-art.com" style={style_primary_color}>
+                                                    {data_config.head_text}
+                                                </a>
+                                            </h1>
                                         </li>
                                     </ul>
                                     <ul className="menu-second">
