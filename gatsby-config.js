@@ -14,6 +14,14 @@ module.exports = {
         `gatsby-plugin-sass`,
         `gatsby-plugin-sitemap`,
         {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: 'https://lost-art.com',
+                sitemap: 'https://lost-art.com/sitemap.xml',
+                policy: [{ userAgent: '*', allow: '/' }]
+            }
+        },
+        {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [

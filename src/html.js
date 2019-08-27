@@ -31,7 +31,7 @@ export default function HTML(props) {
         <link rel="icon" type="image/png" href="/img/icons/android-chrome-192x192.png" sizes="192x192" />
         <link rel="icon" type="image/png" href="/img/icons/favicon-16x16.png" sizes="16x16" />
         {props.headComponents}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
             function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -39,6 +39,18 @@ export default function HTML(props) {
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-WDN875T');
+            `
+          }}
+        /> */}
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KH3W5JP');
             `
           }}
         />
@@ -77,11 +89,16 @@ export default function HTML(props) {
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5882190.js"></script>
       </head>
       <body {...props.bodyAttributes}>
-        <noscript
+        {/* <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDN875T"
             height="0" width="0" style="display:none;visibility:hidden">
             </iframe>`
+          }} /> */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH3W5JP"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>`
           }} />
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
