@@ -232,7 +232,7 @@ export default ProjectTemp;
 
 export const pageQuery = graphql`
     {
-        allContentfulProject(skip: 0, limit: 10, sort: { fields: order }) {
+        allContentfulProject(skip: 0, limit: 15, sort: { fields: order }) {
             edges {
                 node {
                     id

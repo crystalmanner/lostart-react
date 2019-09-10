@@ -27,10 +27,10 @@ const getTransitionStyles = {
 };
 
 const GlobalStyle = createGlobalStyle`
-  @import url(//db.onlinewebfonts.com/c/7dee4e8052171a216cd2446ea682b742?family=Berthold+Akzidenz+Grotesk+BE);
-  * {
-    box-sizing: border-box;
-  }
+//   @import url(https://db.onlinewebfonts.com/c/7dee4e8052171a216cd2446ea682b742?family=Berthold+Akzidenz+Grotesk+BE);
+//   * {
+//     box-sizing: border-box;
+//   }
   body {
     margin: 0;
     font-family: 'akzidenz-grotesk', sans-serif;
