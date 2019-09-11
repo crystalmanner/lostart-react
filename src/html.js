@@ -42,8 +42,8 @@ export default function HTML(props) {
             `
           }}
         /> */}
-
-        <script
+        {/* ---------------------- */}
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -53,7 +53,7 @@ export default function HTML(props) {
             })(window,document,'script','dataLayer','GTM-KH3W5JP');
             `
           }}
-        />
+        /> */}
         <script src="https://use.typekit.net/sbj4klj.js"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -63,7 +63,7 @@ export default function HTML(props) {
           }}
         />
 
-        <script async rc="https://www.googletagmanager.com/gtag/js?id=UA-140149190-1"></script>
+        {/* <script async rc="https://www.googletagmanager.com/gtag/js?id=UA-140149190-1"></script> */}
         {/* <script
             dangerouslySetInnerHTML={{
             __html: `
@@ -75,7 +75,7 @@ export default function HTML(props) {
             `
             }}
         /> */}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
@@ -85,7 +85,7 @@ export default function HTML(props) {
             gtag('config', 'UA-140149190-1');
             `
           }}
-        />
+        /> */}
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5882190.js"></script>
       </head>
       <body {...props.bodyAttributes}>
@@ -95,11 +95,11 @@ export default function HTML(props) {
             height="0" width="0" style="display:none;visibility:hidden">
             </iframe>`
           }} /> */}
-        <noscript
+        {/* <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH3W5JP"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`
-          }} />
+          }} /> */}
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.
