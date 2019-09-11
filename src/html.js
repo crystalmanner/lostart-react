@@ -54,16 +54,16 @@ export default function HTML(props) {
             `
           }}
         /> */}
-        <script src="https://use.typekit.net/sbj4klj.js"></script>
+        {/* <script src="https://use.typekit.net/sbj4klj.js"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
                 try{Typekit.load({ async: true });}catch(e){}
             `
           }}
-        />
+        /> */}
 
-        <script async rc="https://www.googletagmanager.com/gtag/js?id=UA-140149190-1"></script>
+        {/* <script async rc="https://www.googletagmanager.com/gtag/js?id=UA-140149190-1"></script> */}
         {/* <script
             dangerouslySetInnerHTML={{
             __html: `
@@ -75,7 +75,7 @@ export default function HTML(props) {
             `
             }}
         /> */}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
@@ -84,9 +84,9 @@ export default function HTML(props) {
 
             gtag('config', 'UA-140149190-1');
             `
-          }}
+          }} */}
         />
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5882190.js"></script>
+        {/* <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5882190.js"></script> */}
       </head>
       <body {...props.bodyAttributes}>
         {/* <noscript
