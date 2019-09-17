@@ -10,9 +10,12 @@ jobs:
           command: 'sudo npm install -g npm@latest'
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
+      # - run:
+      #     name: Install node modules
+      #     command: npm install
       - run:
-          name: Install node modules
-          command: npm install
+          name: Remove cache
+          command: rm -rf .cache/
       - run:
           name: Build
           command: npm run build
