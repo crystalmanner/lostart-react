@@ -43,7 +43,7 @@ export default function HTML(props) {
           }}
         /> */}
         {/* ---------------------- */}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -53,7 +53,7 @@ export default function HTML(props) {
             })(window,document,'script','dataLayer','GTM-KH3W5JP');
             `
           }}
-        />
+        /> */}
         <script src="https://use.typekit.net/sbj4klj.js"></script>
         <script
           dangerouslySetInnerHTML={{
