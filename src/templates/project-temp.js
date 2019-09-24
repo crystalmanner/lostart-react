@@ -520,16 +520,17 @@ class ProjectTemp extends React.Component {
                 {vimeo3}
                 {vimeo4}
                 {medias}
-                <h1 className="ttile" style={{ ...style_primary_color, ...defineHomeText }}>
+                <h1 className="ttile m-b-35" style={{ ...style_primary_color, ...defineHomeText }}>
                   {project.title}
-                </h1>
+                  {/* </h1>
 
                 <h2
                   className="sub-ttile desc m-b-35"
                   style={{ ...style_second_color, ...defineHomeText }}
-                >
+                > */}
+                  <br></br>
                   {project.description.description}
-                </h2>
+                </h1>
 
                 <div className="m-b-35 content-project">
                   {project.content.content
