@@ -114,7 +114,7 @@ class ProjectTemp extends React.Component {
 
     let meta_data = {
       title: project.metaTitleProject
-        ? project.metaTitleProject + ' | ' + data_config.meta_title
+        ? project.metaTitleProject
         : data_config.meta_title,
       description: project.metaDescriptionProject.metaDescriptionProject
         ? project.metaDescriptionProject.metaDescriptionProject

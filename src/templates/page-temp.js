@@ -55,7 +55,7 @@ class PageContentfulTemplate extends React.Component {
     let meta_data = {
       title:
         page.metaTitlePage !== undefined
-          ? page.metaTitlePage + ' | ' + data_config.meta_title
+          ? page.metaTitlePage
           : data_config.meta_title,
       description:
         page.metaDescriptionPage.metaDescriptionPage !== undefined
