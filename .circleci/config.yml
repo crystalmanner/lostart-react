@@ -16,9 +16,9 @@ jobs:
       # - run:
       #     name: Remove cache
       #     command: rm -rf .cache/
-      - run:
-          name: Build
-          command: npm run build
+      # - run:
+      #     name: Build
+      #     command: npm run build
       - deploy:
           name: deploy on VPS
           # command: ssh -o "StrictHostKeyChecking no" lostart@68.183.29.77 "cd lostart-react; npm run build;"
