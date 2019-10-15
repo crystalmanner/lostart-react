@@ -130,7 +130,7 @@ class ProjectTemp extends React.Component {
             />
         ));
         const defaultBackGround = themeOptions.backgroundColorGeneral
-            ? themeOptions.backgroundColorOfListingProject
+            ? themeOptions.backgroundColorGeneral
             : app_config.BACKGROUND_COLOR;
         const defineBodyFont = isMobile ? '6.25vw' : '22px';
 
