@@ -192,8 +192,8 @@ class ProjectTemp extends React.Component {
           : ""
     };
 
-    console.log("content text")
-    console.log(project.content.content)
+    // console.log("content text")
+    // console.log(project.content.content)
 
     if (project.vimeo1Project) {
       if (isMobile) {
