@@ -162,6 +162,11 @@ class ProjectTemp extends React.Component {
       // paddingBottom: '5px',
       lineHeight: 'normal',
     };
+    const defineDesktopHomeText = {
+      // fontSize: '32px',
+      // paddingBottom: '5px',
+      lineHeight: '22px',
+    }
     let vimeo1 = "";
     let vimeo2 = "";
     let vimeo3 = "";
@@ -523,7 +528,7 @@ class ProjectTemp extends React.Component {
                 {vimeo3}
                 {vimeo4}
                 {medias}
-                <h1 className="ttile m-b-35" style={{ ...style_primary_color, ...defineHomeText }}>
+                <h1 className="ttile m-b-35" style={{ ...style_primary_color, ...defineDesktopHomeText }}>
                   {project.title}
                   {/* </h1>
 
