@@ -858,3 +858,21 @@ section.route-section {
 .project-layout--right .sub-ttile.desc.m-b-35 {
   margin-top: -7px;
 }
+
+@media only screen and (max-width: 768px) {
+  .video--iframe:before {
+    padding-top: 66.21053%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .video {
+      width: 100% !important;
+  }
+  .menu-second.project-page {
+    padding-top: 4px;
+  }
+  .menu-second.projects-page {
+    padding-top: 2px;
+  }
+}

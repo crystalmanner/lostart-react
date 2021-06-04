@@ -156,7 +156,7 @@ class ProjectTemp extends React.Component {
                                         </h1>
                                     </li>
                                 </ul>
-                                <ul className="menu-second">
+                                <ul className="menu-second projects-page">
                                     <li className="m-r-10" style={{ height: '18px' }}>
                                         <Link
                                             to="/page/about-us/"
