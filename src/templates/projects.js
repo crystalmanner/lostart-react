@@ -119,7 +119,8 @@ class ProjectTemp extends React.Component {
         //     color: data_config.second_color
         // };
         const style_hover = {
-            color: !isMobile ? data_config.primary_color : ""
+            // color: !isMobile ? data_config.primary_color : ""
+            color: !isMobile ? data_config.primary_color : data_config.second_color
         };
 
         const projectlist = projects.map((project, index) => (
@@ -205,10 +206,10 @@ class ProjectTemp extends React.Component {
                         style_hover.color
                         } !important}
                 .section-content--menu > ul > .class-contact > a:active{color: ${
-                        style_primary_color.color
+                    style_hover.color
                         } !important}
                 .section-content--menu > ul > .class-contact > a:hover{color: ${
-                        style_primary_color.color
+                    style_hover.color
                         } !important}
               .footer a:hover {color: ${data_config.primary_color} !important}
               .footer a {color: ${data_config.second_color}}

@@ -146,7 +146,8 @@ class HomePage extends Component {
         // let hidefooter = themeOptions.hideFooterGeneral ? "hidefooter" : "";
 
         const style_hover = {
-            color: !isMobile ? data_config.primary_color : ""
+            // color: !isMobile ? data_config.primary_color : ""
+            color: !isMobile ? data_config.primary_color : data_config.second_color
         };
 
         const projectlist = projects.map((project, index) => (

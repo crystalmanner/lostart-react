@@ -146,7 +146,7 @@ a:hover {
 
 .section-content--menu > ul > li > a:hover {
   text-decoration: none;
-  color: $primary_colour !important;
+  color: $secondary_colour !important;
 }
 
 .project-item {
@@ -855,3 +855,6 @@ section.route-section {
   min-height: calc(100% - 500px);
 }
 
+.project-layout--right .m-b-35 {
+  margin-top: -7px;
+}
