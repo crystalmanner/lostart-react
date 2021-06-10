@@ -38,6 +38,7 @@ class ProjectTemp extends React.Component {
                 $(".project-layout--left").css({
                     opacity: "1",
                     // background: themeOptions.backgroundColorOfListingProject
+                    background: themeOptions.backgroundColorGeneral
                 });
             }
             iScrollPos = iCurScrollPos;
