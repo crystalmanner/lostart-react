@@ -34,10 +34,10 @@ class ProjectTemp extends React.Component {
                 el.classList.remove("nav_fixed");
             } else {
                 //Scrolling Up
-                el.classList.add("nav_fixed");
+                // el.classList.add("nav_fixed");
                 $(".project-layout--left").css({
                     opacity: "1",
-                    background: themeOptions.backgroundColorOfListingProject
+                    // background: themeOptions.backgroundColorOfListingProject
                 });
             }
             iScrollPos = iCurScrollPos;

@@ -35,7 +35,7 @@ class PageLayout extends React.Component {
         el.classList.add("nav_fixed");
         $(".project-layout--left").css({
           opacity: "1",
-          background: page.backgroundColorPage
+          // background: page.backgroundColorPage
         });
       }
       iScrollPos = iCurScrollPos;
