@@ -147,6 +147,9 @@ class ProjectTemp extends React.Component {
         ? project.secondColorProject
         : data_config.second_color
     };
+    const style_hover = {
+      color: !isMobile ? data_config.primary_color : data_config.second_color
+    };
     const defaultBackGround = themeOptions.backgroundColorGeneral
       ? themeOptions.backgroundColorOfListingProject
       : app_config.BACKGROUND_COLOR;
@@ -423,7 +426,7 @@ class ProjectTemp extends React.Component {
                   </ul>
                   <ul className="menu-second-1">
                     <li>
-                      <GoBack style={{ ...style_second_color, ...defineBodyStyle }} />
+                      <GoBack style={{ ...style_primary_color, ...defineBodyStyle }} />
                     </li>
                   </ul>
                 </div>
@@ -467,6 +470,9 @@ class ProjectTemp extends React.Component {
           </div>
           <style>
             {`
+            .section-content--menu > ul > li > a:hover {color: ${
+              style_hover.color
+              } !important}
             .footer a , .project-layout--right a {color: ${style_second_color.color}}
             .project-layout--right {color: ${style_primary_color.color}}
             `}
